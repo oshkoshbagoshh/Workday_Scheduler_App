@@ -38,84 +38,160 @@
  */
 
 
-// Step 1 - Get today and attach to front 
-const todayIs = console.log(dayjs().format("MMM D, YYYY"));
+// // Step 1 - Get today and attach to front 
+// const todayIs = console.log(dayjs().format("MMM D, YYYY"));
 
-// declare global variables 
-const now1 = $.now();
-// console.log(now1);
+// // declare global variables 
+// const now1 = $.now();
+// // console.log(now1);
 
-//calculate today
+// //calculate today
 
-// # TESTING #REMOVE 
-var todayDay = $(dayjs);
-console.log("today is:" + todayDay);
+// // # TESTING #REMOVE 
+// var todayDay = $(dayjs);
+// console.log("today is:" + todayDay);
 
-var currentDateFormatted = dayjs().format("MM/DD/YYYY");
+// var currentDateFormatted = dayjs().format("MM/DD/YYYY");
 
-console.log("today is" + " " + currentDateFormatted);
-// //check type 
-console.log(typeof(currentDateFormatted));
-
-
-// function for printing todays date
-function  printToday () { 
-
-    var currentDateStatement = "today is " + " " + currentDateFormatted;
-    return currentDateStatement;
+// console.log("today is" + " " + currentDateFormatted);
+// // //check type 
+// console.log(typeof(currentDateFormatted));
 
 
+// // function for printing todays date
+// function  printToday () { 
 
+//     var currentDateStatement = "today is " + " " + currentDateFormatted;
+//     return currentDateStatement;
+
+
+
+
+//  }
+// printToday();
+
+
+// // use DayJS to get the current day and format it 
+
+// var today = dayjs();
+// $('#currentDay').text(today.format('MMM D, YYYY, h:mm:ss'));
+// // $('#currentDay').append("test");
+// // $("document")
+
+// var dayOfWeek = dayjs().day();
+// $('#currentDay').text(dayOfWeek);
+
+// // insert a statement saying what day it is
+
+
+// /*********************
+ 
+
+// function for timer app. this will create a variable for the current day, and then check that to see if it falls into 
+// one of three states: 
+ 
+
+//  1. Past
+//  2. Present
+//  3. Future 
+
+//  ****/
+
+
+ // add a welome message and get the time of everything. Keep
+ var currentHour = dayjs().format('hh');
+ var currentHourString = ("The current time is " + " " + currentHour);
+ console.log(currentHour);
+ console.log(currentHourString);
+ 
+ function showWelcomeMessage() {
+    var currentTime = dayjs().format('hh:mm:ss a');
+    var currentTimeString = ("the current time is " + " " + currentTime);
+    console.log(currentTime); 
+    console.log(currentTimeString);
+    $("#currentDay").append("Today is " + " " + dayjs().format("dddd")+" " + "and" +"  " +" " + " " + currentTimeString)
 
  }
-printToday();
+showWelcomeMessage();
 
 
-// use DayJS to get the current day and format it 
+// function to change style
 
-var today = dayjs();
-$('#currentDay').text(today.format('MMM D, YYYY, h:mm:ss'));
-$('#currentDay').append("test");
-// $("document")
-
-var dayOfWeek = dayjs().day();
-$('#currentDay').text(dayOfWeek);
-
-// insert a statement saying what day it is
+// if (condition) {
+    
+// } else {
+    
+// }
 
 
-/*********************
+function checkCurrentTime (currentHour) {
+
+    // check 9
+    const userHour = dayjs().now().format("hh");
+    if (userHour == 9 ) {
+        $("hour-9").attr("class", "present");
+    } else if (userHour > 9)  {
+        $("hour-9").attr("class","future")
+        $("hour-9").data("some data")
+
+}   else {
+    $("hour-9").attr("class","past");
+
+//check 10
+
+
+//check 11
+
+// check 12
+
+//check 1pm
+
+//check 2pm
+
+//check 3pm
+
+//check 4pm
+
+//check 5pm
+
+
+
+
  
+    
+}
 
-function for timer app. this will create a variable for the current day, and then check that to see if it falls into 
-one of three states: 
- 
+checkCurrentTime();
 
- 1. Past
- 2. Present
- 3. Future 
+// var currentHour = dayjs().format('hh');
+// var currentHourString = ("The current time is " + " " + currentHour);
+// console.log(currentHour);
+// console.log(currentHourString);
 
- ****/
-
-
- // getting current hour to check if it fits the block 
- 
- var currentTime = dayjs().format('hh:mm:ss');
-var currentTimeString = ("The current time is " + " " + currentTime);
-console.log(currentTime); 
-console.log(currentTimeString);
-$("#currentDay").append("Today is " + " " + currentTimeString)
-
-
-var currentHour = dayjs().format('hh');
-var currentHourString = ("The current time is " + " " + currentHour);
-console.log(currentHour);
-console.log(currentHourString);
-
-//
+// creating div tags for the hours in a day 
 var hoursInADay = 24;
+// var newDivHourIDs = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24];
+// console.log(newDivHourIDs);
+var presentBlock = document.getElementsByClassName("present");
+var pastBlock = document.getElementsByClassName("past");
+var futureBlocks = document.getElementsByClassName("future");
 
-console.log(hoursInADay);
+// remove the attribute, then add it based on the class being present
+
+$(selector).removeAttr(attribute);
+
+
+
+console.log(presentBlock);
+console.log(pastBlock);
+console.log(futureBlocks);
+//if else statement to change div 
+
+// console.log(divTags);
+
+
+// console.log(hoursInADay / 60);
+// console.log(hoursInADay);
 
 
 // var blockDivs =
@@ -128,10 +204,5 @@ console.log(hoursInADay);
 
 // create the function to check the current time then use if else to color it 
 
-
-
-
-function updateColors() {
-    // if currenthour is less than now, then change the display to grey
-
 }
+
