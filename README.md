@@ -4,23 +4,29 @@
 
 
 ## Description
-
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+<!-- 
+Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide: -->
 
 
 - What was your motivation?
-  - The goal for this project was to utilize the existing code provided to us and then create the acceptance criteria below.
-  - the goal for this project was to utilize Third Party APIs (specifically jQuery, Bootstrap, and DayJS. 
+
+  - The goal for this project was to utilize the existing code provided to us and then create the acceptance criteria below, utilizing Third Party APIs,  such as jQuery, Bootstrap, and DayJS. 
 
 
-
-
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
+  - Easy DOM manipulation 
+    - 
+
 - What did you learn?
+  - It's much easier to pull from a form element that trying to use a text area and get the HTML content that way. 
+  - pulling elements into the local storate using jquery
+  - capturing user input and saving it 
+  - changing styling based on certain conditions
+  - 
 
 
 
+## User Story 
 
 ```md
 AS AN employee with a busy schedule
