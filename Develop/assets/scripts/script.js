@@ -10,7 +10,7 @@
 
  - do this by using attributes and changing the class via jQuery 
 
-//TODO:Display todays date via DayJS ] -- DONE(mvp)
+//TODO:Display todays date via DayJS ] --
 
 //TODO:Functionality for the save button...addevent listener...need to store input to the local storage
 
@@ -117,7 +117,16 @@
 showWelcomeMessage();
 
 
-const hideAfterLunch = $("#scroll").hide();
+//TODO: need to change the text areas into actual forms so we can collect the data
+
+var textAreas = $(":textarea")
+textAreas.addClass("forms");
+textAreas.data(123);
+userInput = textAreas.text();
+
+
+
+// const hideAfterLunch = $("#scroll").hide();
 
 //TODO: save into local storage
 // function to change style
@@ -127,12 +136,22 @@ const hideAfterLunch = $("#scroll").hide();
 // } else {
     
 // }
+// save input into local storage
 
+// $("#userForms").toggleClass("present","future");
 
-function checkCurrentTime (currentHour) {
+function checkCurrentTime () {
 
+    dayjs().format(h);
+    //outputs 7
+    console.log(' dayjs().format(h);')
+
+    var inputs = $(":input");
+ 
+// $("button").data(key, value);
     // check 9
     const userHour = dayjs().now().format("hh");
+    console.log(userHour);
     if (userHour == 9 ) {
         $("hour-9").attr("class", "present");
     } else if (userHour > 9)  {
@@ -277,3 +296,10 @@ showWelcomeMessage();
 }
 }
 }
+//Save button  on event listener
+function saveInLocalStorage(project_info) {
+    var allProjects = JSON.parse(localStorage.getItem("projects")) || [];
+    allProjects.push(project_info);
+    localStorage.setItem("projects", JSON.stringify(allProjects));
+    display();
+  }

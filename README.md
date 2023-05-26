@@ -1,4 +1,4 @@
-# Workday_Scheduler_App
+# Workday_Scheduler_App 
 
 
 
@@ -7,7 +7,14 @@
 
 Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
 
+
 - What was your motivation?
+  - The goal for this project was to utilize the existing code provided to us and then create the acceptance criteria below.
+  - the goal for this project was to utilize Third Party APIs (specifically jQuery, Bootstrap, and DayJS. 
+
+
+
+
 - Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
 - What problem does it solve?
 - What did you learn?
@@ -60,6 +67,10 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 ![alt text](assets/images/screenshot.png)
 
+
+## Snapshot
+
+![snapshot](Develop/assets/images/05-third-party-apis-homework-demo.gif)
 ## Credits
 
 List your collaborators, if any, with links to their GitHub profiles.
