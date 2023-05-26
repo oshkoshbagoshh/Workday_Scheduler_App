@@ -111,10 +111,15 @@
     console.log(currentTimeString);
     $("#currentDay").append("Today is " + " " + dayjs().format("dddd")+" " + "and" +"  " +" " + " " + currentTimeString)
 
+
+
  }
 showWelcomeMessage();
 
 
+const hideAfterLunch = $("#scroll").hide();
+
+//TODO: save into local storage
 // function to change style
 
 // if (condition) {
@@ -139,27 +144,61 @@ function checkCurrentTime (currentHour) {
 
 //check 10
 
+    const userHour = dayjs().now().format("hh");
+    if (userHour == 10 ) {
+        $("hour-10").attr("class", "present");
+    } else if (userHour > 10)  {
+        $("hour-10").attr("class","future")
+        $("hour-10").data("some data")
+
+}   else {
+    $("hour-10").attr("class","past");
+
 
 //check 11
 
+const userHour = dayjs().now().format("hh");
+if (userHour == 11 ) {
+    $("hour-11").attr("class", "present");
+} else if (userHour > 11)  {
+    $("hour-11").attr("class","future")
+    $("hour-11").data("some data")
+
+}   else {
+$("hour-11").attr("class","past");
+
+
 // check 12
+const userHour = dayjs().now().format("hh");
+if (userHour == 12 ) {
+    $("hour-12").attr("class", "present");
+} else if (userHour > 11)  {
+    $("hour-12").attr("class","future")
+    $("hour-12").data("some data")
 
-//check 1pm
-
-//check 2pm
-
-//check 3pm
-
-//check 4pm
-
-//check 5pm
-
+}   else {
+$("hour-12").attr("class","past");
 
 
+//check 1pm, 2pm, 3pm, 4pm, 5pm
 
- 
+
+
+
+const userHour = dayjs().now().format("hh");
+if (userHour == 1 ) {
+    $("hour-1").attr("class", "present");
+} else if (userHour > 11)  {
+    $("hour-1").attr("class","future")
+    $("hour-1").data("some data")
+
+}   else {
+$("hour-1").attr("class","past");
+
     
 }
+
+
 
 checkCurrentTime();
 
@@ -204,5 +243,37 @@ console.log(futureBlocks);
 
 // create the function to check the current time then use if else to color it 
 
+//create the function to save something on a click
+//need event listener 
+
+
+}
+showWelcomeMessage();
+
+
+//did user scroll to the bottom 
+
+// $(window).scroll(hideBlocks())  {
+
+
+
+
+// //     // Code to execute when the scroll event occurs
+// //     // You can access the scroll position using `$(window).scrollTop()`
+// //     // For example, you can check if the user has scrolled to the bottom of the page:
+// //     if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+// //       // User has scrolled to the bottom
+// //       console.log("Scrolled to the bottom of the page");
+// //     }
+// //   });
+
+
+// }
+// }
+// }
+// }
 }
 
+}
+}
+}
