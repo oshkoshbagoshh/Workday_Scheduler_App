@@ -58,3 +58,25 @@ body {
     transition: all 0.3s ease-in-out;
   }
   
+  .plainText {
+
+    font-size: 12px;
+    align-content: center;
+    color:yellow;
+    background-color: #000000;
+
+  
+  }
+
+/* ID Used to remove things based on logic in Js */
+
+  #test1 {
+    background-color: yellow;
+    display: flex;
+    font-style: italic;
+  
+
+
+  }
+
+

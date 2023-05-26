@@ -30,4 +30,12 @@ Enter in your schedule. Works with Third Party APIS
  
  ---
  
+/*
+ * @Author: Someone 
+ * @Email: someone@example.com
+ * @Date: 2023-05-25 22:28:12 
+ * @Last Modified by:   undefined 
+ * @Last Modified time: 2023-05-25 22:28:12
+ * @Description: file:///Users/aj/Desktop/bootcamp/Homework/HW_5/Workday_Scheduler_App/misc/notes.txt
+ */
  
