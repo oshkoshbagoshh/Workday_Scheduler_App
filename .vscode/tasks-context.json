@@ -1,0 +1,34 @@
+{
+  "tasks": [
+    {
+      "name": "timeblocks for standard hours",
+      "complete": false,
+      "creationDate": "2023-05-28T07:36:25.583Z",
+      "files": []
+    },
+    {
+      "name": "color code the blocks based on time",
+      "complete": false,
+      "creationDate": "2023-05-28T07:36:42.876Z",
+      "files": []
+    },
+    {
+      "name": "user input for timeblock",
+      "complete": false,
+      "creationDate": "2023-05-28T07:37:15.901Z",
+      "files": []
+    },
+    {
+      "name": "save text to local storage",
+      "complete": false,
+      "creationDate": "2023-05-28T07:37:36.203Z",
+      "files": []
+    },
+    {
+      "name": "on refresh the saved events persist",
+      "complete": false,
+      "creationDate": "2023-05-28T07:37:53.962Z",
+      "files": []
+    }
+  ]
+}
